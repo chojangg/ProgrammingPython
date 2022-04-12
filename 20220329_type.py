@@ -50,6 +50,23 @@ print(0o10)     #0o을 붙이며 8진수를 알려줌(10 => 8)
 print(0x10)     #0x을 붙이며 16진수를 알려줌(10 => 16)
 print(0xFF)     #16진수 FF =>255
 
-#10진수 -> 2진수
+#10진수 -> 2진수, 8진수, 16진수
 print(bin(10))   #0b1010
 print(bin(9))    #ob1001
+print(oct(10))   #0o12
+print(hex(10))   #0xa
+
+#지수 표현
+print(f'지구의 나이: {4.543e9}살')    #float
+print(f'원자의 크기: {1e-10}')       #float
+
+#복소수
+print(9+1J-4-5j)    #J가 대문자든 소문자로 쓰든 소문자로 출력됨
+ys = 9 + 1j
+hj = 7 - 3j
+print(ys + hj)  #(16-2j)
+print(ys.real)  #9.0
+print(hj.imag)  #-3.0
+print(hj.conjugate())   #(7+3j) #켤레복소수
+print(hj * hj.conjugate())  #(58+0j) = 49 + (-3j x 3j) = 49 + 9 = (58+0j)
+print(type(ys)) #<class 'complex'>
