@@ -72,3 +72,11 @@ print(ip_list_str)
 name_List_str = ' | '.join(name_List)
 print(name_List_str)
 print(",".join(name_List))
+
+#format
+s = 'name: {}, number: {}, soccer: {}'
+print(s.format('손흥민', 7, True))
+s = 'name: {1}, number: {2}, soccer: {0}'
+print(s.format('손흥민', 7, True))
+s = 'name: {name}, number: {n}, soccer: {s}'
+print(s.format(name='손흥민', s=True, n=7))
