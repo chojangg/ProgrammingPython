@@ -63,16 +63,17 @@
 # else:
 #     print("10이하")
 
-#
-nicname = "JAYUN"
+# 아이디, 패스워드 검사 프로그램
+nickname = "JAYUN"
 id = "python_ddabong"
 password = "python"
 ID = input('id를 입력하세요 : ')
 pw = input('비밀번호를 입력하세요 : ')
 if id == ID:
     if password == pw:
-        print("환영합니다 "+nicname+"님")
+        print("환영합니다 "+nickname+"님")
     else:
         print("패스워드가 틀렸습니다")
 else:
     print("알 수 없는 사용자입니다.")
+    
