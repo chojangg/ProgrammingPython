@@ -31,7 +31,42 @@ print(f'{g} {int(student_number[2:])}번')
 #>> 2학년 1반 뉴미디어 소프트웨어과 8번
 print('-'*30)
 
-# 3. 369게임
+# 3. N-sum
+number = 331
+# n1 = (int)(number % 1000 / 100)
+# n2 = (int)(number % 100 / 10)
+# n3 = (int)(number % 10)
+# print(n1+n2+n3)
+#>>7
+number = 523523
+sum_val = 0
+while True: # while number!=0
+    if number == 0:
+        break
+    sum_val += number % 10
+    sum_val += number // 10
+print(sum_val)
+# 숫자 한자리씩 빼서 계산하자
+number_s = str(number)  # '523523'
+sum_val2 = 0
+for n in number_s:
+    sum_val2 += int(n)
+print(sum_val2)
+# 나머지 = number % 10   #3
+# number = number // 10   # 523523 -> 52352
+# 나머지 = number % 10   #2
+# number = number // 10   # 52352 -> 5235
+# 나머지 = number % 10   #5
+# number = number // 10   # 5235 -> 523
+# 나머지 = number % 10   #3
+# number = number // 10   # 523 -> 52
+# 나머지 = number % 10   #2
+# number = number // 10   # 52 -> 5
+# 나머지 = number % 10   #5
+# number = number // 10   # 5 -> 0
+#>>20
+
+# 4. 369게임
 # for i in range(1, 101):
 #     if(i < 10):
 #         if(i % 3 == 0):
