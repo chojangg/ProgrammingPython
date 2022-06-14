@@ -62,11 +62,10 @@ def my_print5(*args):   # args 자료형은 tuple
 my_print5('안유진', 20, '아이브', '러브다이브')
 print('*'*20)
 
-def my_print6(name, *args):   # args 자료형은 tuple
+def my_print6(name, *args):   # 기본값있는 파라미터
     print(f'{name} 정보: ')
     # print(type(args))
     for arg in args:
         print(arg)
 my_print6('안유진', 20, '아이브', '러브다이브')
 print('*'*20)
-
