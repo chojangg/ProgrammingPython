@@ -53,19 +53,23 @@ my_print4('안유진', age=20, group='아이즈원')  # 위치 인자는 무조�
 print('*'*20)
 
 # 가변인자
-def my_print5(*args):   # args 자료형은 tuple
-    print('정보: ')
-    # print(type(args))
+def my_print5(*args):
+    print('정보 : ')
+    #print(type(args))
+    for arg in args:
+        print(arg)
+def my_print6(name, *args):
+    print('{name}정보 : ')
+    #print(type(args))
     for arg in args:
         print(arg)
 
-my_print5('안유진', 20, '아이브', '러브다이브')
-print('*'*20)
+my_print5('안유진',20,'다이브 ','러브다이브')
+my_print6('안유진',20,'다이브 ','러브다이브')
+print('-'*20)
 
-def my_print6(name, *args):   # 기본값있는 파라미터
-    print(f'{name} 정보: ')
-    # print(type(args))
-    for arg in args:
-        print(arg)
-my_print6('안유진', 20, '아이브', '러브다이브')
-print('*'*20)
+def my_print7(name, age = 20, group):#기본값있는 파라미터 뒤에는 무조건 기본값있는 파타리머
+#    print(name +" : "+str(age)+'살입니다.',group,'소속입니다.')# 이름: 살입니다.
+#    print(name,':', age, '살입니다.')#이름 :  20 살입니다.ㅜ
+#    print(f'{name} : {age}살입니다. {group}소속입니다.')
+print('-'*20)
