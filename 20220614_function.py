@@ -68,8 +68,6 @@ my_print5('안유진',20,'다이브 ','러브다이브')
 my_print6('안유진',20,'다이브 ','러브다이브')
 print('-'*20)
 
-def my_print7(name, age = 20, group):   #기본값있는 파라미터 뒤에는 무조건 기본값있는 파타리머
-#    print(name +" : "+str(age)+'살입니다.',group,'소속입니다.')# 이름: 살입니다.
-#    print(name,':', age, '살입니다.')#이름 :  20 살입니다.
-#    print(f'{name} : {age}살입니다. {group}소속입니다.')
-print('-'*20)
+# def my_print7(name, age=20, group):   # 기본값 있는 파라미터 뒤에 기본값 없는 파라미터가 올 수 없음
+#     print(f'{name}: {age}살입니다. {group} 소속입니다.')
+# my_print7('사카타 긴토키', '은혼')

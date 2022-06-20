@@ -82,4 +82,10 @@ for number in range(1, 101):     #1~100
     else:    #>> 1 2 짝 4 5 짝 ... 짝짝 100
         print('짝' * count)
 
-
+# gugudan(): 구구단 2단 출력하자
+# gugudan(5): 구구단 5단 출력하자
+def gugudan(dan):
+    for n in range(1, 9+1):     # 1 <= n <= 9
+        print(f'{dan} x {n} = {dan*n}')
+gugudan(5)
+# gugudan() => 실행시 에러
