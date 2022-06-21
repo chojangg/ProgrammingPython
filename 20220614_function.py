@@ -71,3 +71,56 @@ print('-'*20)
 # def my_print7(name, age=20, group):   # 기본값 있는 파라미터 뒤에 기본값 없는 파라미터가 올 수 없음
 #     print(f'{name}: {age}살입니다. {group} 소속입니다.')
 # my_print7('사카타 긴토키', '은혼')
+#print('-'*20)
+def say(name, msg='안녕하세요', feeling='♡'):
+    print(f'{name}, {msg}, {feeling}')
+say('가현')
+say('가현', '🤍')
+say('가현', feeling='🤍')
+print('-'*20)
+def fn(a, b=[]):
+    b.append(a)
+    print(b)
+fn(3)   # [3]
+fn(5)   # [5]:X, [3, 5]
+fn(10, [1])# [1, 10]
+fn(7)   # [3, 5, 7]
+print('-'*20)
+say('현진', '미안해')
+print('-'*20)
+# 지금부터 20년 후의 내 나이 리턴하자
+def plus20(age):
+    print(age+20)
+a = plus20(18)  # 38
+print(a)    # None: plus20() return 값이 없어서 None으로 리턴
+print('-'*20)
+def plus20_2(age):
+    return age+20
+a = plus20_2(18)  # 38
+print(a)
+print('-'*20)
+# 전화번호 앞 자리(지역번호)와 맨 뒤 네자리 출력하자
+def tel(number):
+    index = number.find('-')
+    f = number[:index]
+    b = number[-4:]
+    return f, b #(f,b)
+# front = '010'
+# back = '5678'
+front, back = tel('010-1234-5678')
+print(f'앞: {front}\t뒤: {back}')
+print('-'*20)
+# min_max([3, 31, 1, 6, 5, -6])
+def min_max(리스트):
+    min_value=리스트[0]
+    max_value=리스트[0]
+    for n in range(1, 6):
+        if min_value > 리스트[n]:
+            min_value = 리스트[n]
+        elif max_value < 리스트[n]:
+            max_value = 리스트[n]
+    return min_value, max_value
+
+min_value, max_value = min_max([3, 31, 1, 6, 5, -6])
+print(f'최소: {min_value}\t최대: {max_value}')
+
