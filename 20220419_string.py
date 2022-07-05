@@ -55,7 +55,7 @@ print(f'{s.index("d")}') #7
 print(f'{s.replace("buffering", "hello future")}')  #replace하면 원본이 바뀌는게 아니라
 print(s)                                            #잠시 바뀐문자열을 return 한다.
 #"   NCT dream buffering      "
-print('e' in s) #True  특정 문자열안에 e가 있나없나 확인
+print('e' in s) #True  특정 문자열안에, e가 있나없나 확인
 print('z' in s) #False
 
 #split, join
