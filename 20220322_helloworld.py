@@ -9,3 +9,6 @@ print("Red Velvet's favorite song is Red Flavor") #'을 쓰게 될때 큰따옴�
 student_number = 2112
 name = '최자윤'
 print(f'학번: {student_number}, 이름: {name}')     #학번: 2112, 이름: 최자윤
+
+for val in range(1, 11, 2):
+    print(val)
