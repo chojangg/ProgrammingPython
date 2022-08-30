@@ -13,6 +13,14 @@ def sum_odd(phone_number):
             sum_value += number
     return sum_value
 
+# sum_value = 0
+# for 하나 in 덩어리:
+#     sum_value += 하나
+
+# count_value = 0
+# for 하나 in 덩어리:
+#     count_value += 1
+
 result = sum_odd('01012345678')
 print(result)
 
